@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+#app {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Adjust width to fit screen */
+    max-width: 500px; /* Maximum width to ensure readability */
+    margin: 0 auto; /* Center on the screen */
+}
+
+.task-input {
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 90%; /* Adjust width to fit screen */
+    max-width: 90%; /* Maximum width to ensure readability */
+    min-height: 100px; /* Allow multiple lines */
+}
+
+.add-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90%; /* Adjust width to fit screen */
+    max-width: 90%; /* Maximum width to ensure readability */
+    margin-top: 10px; /* Add spacing between input and button */
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 90%; /* Adjust width to fit screen */
+    max-width: 500px; /* Maximum width to ensure readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    max-height: 150px; /* Limit the height of list items */
+    overflow: auto; /* Add scrollbars if content exceeds the max height */
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+.delete, .edit {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit {
+    background-color: #28a745;
+}
+
+.delete:hover, .edit:hover {
+    background-color: #dc3545;
+}
